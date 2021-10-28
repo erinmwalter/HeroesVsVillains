@@ -1,0 +1,14 @@
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.csproj.AssemblyReference.cache
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.AssemblyInfoInputs.cache
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.AssemblyInfo.cs
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.csproj.CoreCompileInputs.cache
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.exe
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.deps.json
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.runtimeconfig.json
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.runtimeconfig.dev.json
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.dll
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\bin\Debug\netcoreapp3.1\HeroVersusVillain.pdb
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.dll
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.pdb
+C:\Users\ewalter\source\repos\HeroVersusVillain\HeroVersusVillain\obj\Debug\netcoreapp3.1\HeroVersusVillain.genruntimeconfig.cache
