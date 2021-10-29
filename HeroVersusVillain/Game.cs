@@ -32,23 +32,45 @@ namespace HeroVersusVillain
 
         public void SetCharacters()
         {
-            Heroes.PrintCharacters();
-            int choice = int.Parse(Program.GetInput("Choose your character: "));
-            Player = Heroes.SelectCharacter(choice-1);
-            Villains.PrintCharacters();
-            choice = int.Parse(Program.GetInput("Choose your opponent: "));
-            Opponent = Villains.SelectCharacter(choice - 1);
+            while (true)
+            {
+                try
+                {
+                    Heroes.PrintCharacters();
+                    int choice = int.Parse(Program.GetInput("Choose your character: "));
+                    Player = Heroes.SelectCharacter(choice - 1);
+                    Villains.PrintCharacters();
+                    choice = int.Parse(Program.GetInput("Choose your opponent: "));
+                    Opponent = Villains.SelectCharacter(choice - 1);
+                    break;
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                    Console.WriteLine("Invalid, selections, try again.");
+                    continue;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Please choose integer value, try again.");
+                    continue;
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Please choose only a number from the menu.");
+                    continue;
+                }
+            }
 
         }
 
         public void TakeTurn()
         {
-            Console.Clear();
-            Console.WriteLine($"Your Health: {Player.Health}");
-            Console.WriteLine($"Opponent Health: {Opponent.Health}");
+            DisplayHealth();
             PlayerAttack();
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("Press any key to continue...");        
             Console.ReadKey();
+
+            DisplayHealth();
             OpponentAttack();
             Console.WriteLine("Press any key to continue to next turn...");
             Console.ReadKey();
@@ -59,6 +81,7 @@ namespace HeroVersusVillain
             int difference = Math.Abs(attacker - defender);
             if(attacker > defender) 
             {
+                Console.WriteLine($"Attack, strength {difference} Succeeded!");
                 return difference;
             }
             else
@@ -100,6 +123,7 @@ namespace HeroVersusVillain
 
         public void GameOver()
         {
+            DisplayHealth();
             if (Player.Health < Opponent.Health)
             {
                 Console.WriteLine($"{Opponent} has defeated you. You Lose!");
@@ -112,6 +136,13 @@ namespace HeroVersusVillain
             {
                 Console.WriteLine("You both have died! Valiant effort.");
             }
+        }
+
+        public void DisplayHealth()
+        {
+            Console.Clear();
+            Console.WriteLine($"Your Health: {Player.Health}");
+            Console.WriteLine($"Opponent Health: {Opponent.Health}");
         }
 
     }
